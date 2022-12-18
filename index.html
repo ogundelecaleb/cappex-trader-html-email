@@ -10,7 +10,8 @@
       ------------------------------------- */
 
       /*All the styling goes here*/
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500&family=Barlow&family=Clicker+Script&family=Inter:wght@500;600&display=swap");
       img {
         border: none;
         -ms-interpolation-mode: bicubic;
@@ -73,9 +74,7 @@
           HEADER, FOOTER, MAIN
       ------------------------------------- */
       .main {
-        background: #0530f0;
-        /* background-image: url(images5.jpeg); */
-        /* background: linear-gradient(45deg, rgba(9, 0, 170, 1) 1%, rgba(12, 27, 236, 1)56%, rgb(27, 143, 221)93%); */
+        background-image: url(Stock-Chart2.svg);
         border-radius: 3px;
         width: 100%;
       }
@@ -104,6 +103,12 @@
         font-size: 12px;
         text-align: center;
       }
+      .bold-text {
+        font-size: 1.2rem;
+        /* font-family: 'Inter', sans-serif; */
+        text-align: center;
+        font-weight: 500;
+      }
 
       /* -------------------------------------
           TYPOGRAPHY
@@ -131,12 +136,12 @@
       ul,
       ol {
         color: white;
-        font-family: 'Cormorant Upright', serif;
+        font-family: "Cormorant Upright", serif;
         font-size: 14px;
         font-weight: normal;
         margin: 0;
         margin-bottom: 15px;
-        text-align: center;
+        text-align: left;
         /* background-color: #3498db;
         border-radius: 4px; */
       }
@@ -147,23 +152,23 @@
         list-style-position: inside;
         margin-left: 5px;
       }
-      /* .normal-text{
-        font-family: 'Open Sans', sans-serif;
-      } */
 
       a {
         color: #3498db;
         text-decoration: underline;
       }
-      .flexed-line{
+      .flexed-line {
         display: flex;
-        gap: 3rem;
+        gap: 2rem;
         align-items: center;
         margin: 0 auto;
-        max-width: 65%;
+        max-width: 85%;
       }
       .flexed-line img {
         height: 2rem;
+      }
+      .flexed-line p {
+        font-size: 1rem;
       }
 
       /* -------------------------------------
@@ -210,6 +215,7 @@
         background-color: #ffffff;
         border-color: #ffffff;
         color: #0057ff;
+        text-align: center;
       }
 
       /* -------------------------------------
@@ -278,14 +284,23 @@
           font-size: 28px !important;
           margin-bottom: 10px !important;
         }
-        table.body p,
+        .bottom-text {
+          padding: 4px;
+          background-color: #0057ff;
+          border-radius: 5px;
+        }
+        /* table.body p .bold-text {
+          font-size: 1.3rem;
+        } */
+        /* table.body p,
         table.body ul,
         table.body ol,
         table.body td,
         table.body span,
         table.body a {
-          font-size: 16px !important;
-        }
+          font-size: 16px;
+        } */
+
         table.body .wrapper,
         table.body .article {
           padding: 10px !important;
@@ -333,10 +348,15 @@
         .apple-link a {
           color: inherit !important;
           font-family: inherit !important;
-          font-size: inherit !important;
+
           font-weight: inherit !important;
           line-height: inherit !important;
           text-decoration: none !important;
+        }
+        .bold-text {
+          font-size: 1rem;
+          text-align: center;
+          font-weight: 500;
         }
         #MessageViewBody a {
           color: inherit;
@@ -357,7 +377,6 @@
     </style>
   </head>
   <body>
-  
     <table
       role="presentation"
       border="0"
@@ -410,45 +429,44 @@
                             </tr>
                           </tbody>
                         </table>
-                        <p>
+                        <p class="bold-text">
                           Picture this a trading platform where you can bend the
                           markets without even having an idea of how it works!!
                         </p>
                         <div class="flexed-line">
-                        <p>Yes! you read that right ! ! !</p>
-                        <img src="rocket.svg" alt="BTC image">  
+                          <p>Yes! you read that right ! ! !</p>
+                          <img src="rocket.svg" alt="BTC image" />
                         </div>
-                        
 
-                        <p class="normal-text">
+                        <p>
                           Cappex Traders is running a promo now and offers you
                           chances of getting 50% bonus on deposits up to $25,000
                           and higher, copy trading that allows you to place
                           exact same trades with pro traders whenever they trade
                           and get huge returns as they're guaranteed
                         </p>
-                       
-                                <table
-                                  role="presentation"
-                                  border="0"
-                                  cellpadding="0"
-                                  cellspacing="0"
-                                  class="btn btn-primary"
+
+                        <table
+                          role="presentation"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          class="btn btn-primary"
+                        >
+                          <tbody>
+                            <tr>
+                              <td align="left">
+                                <a
+                                  href="http://cappextrader.com"
+                                  target="_blank"
+                                  >Sign Up Now!!</a
                                 >
-                                  <tbody>
-                                    <tr>
-                                      <td align="left">
-                                        <a
-                                          href="http://cappextrader.com"
-                                          target="_blank"
-                                          >Sign Up Now!!</a
-                                        >
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              
-                        <p class="normal-text">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <p class="bottom-text">
                           Signing up now gives you access to aforementioned
                           bonus and insure traders which means you get a refund
                           for every lost trade as long as you insure them for
